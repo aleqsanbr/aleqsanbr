@@ -1,0 +1,53 @@
+ru:
+  header:
+    name: "aleqsanbr [:]"
+    subtitle: "123"
+
+  support:
+    title: "Донаты"
+    description: "Если вы хотите поддержать меня чем-нибудь, то воспользуйтесь кнопкой ЮMoney для перевода с кошелька или российской карты, а для перевода криптовалюты можно скопировать адрес или использовать QR-код :)"
+    yoomoney_button: "ЮMoney"
+
+  crypto:
+    copy_button_title: "Копировать"
+    qr_button_title: "Показать QR"
+    copy_toast: "Адрес скопирован"
+
+  projects:
+    title: "Проекты"
+    yandex_music_export:
+      name: "Yandex Music Export"
+      description: "Экспорт плейлистов Яндекс Музыки в текстовый файл без авторизации"
+    more_to_come:
+      name: "Скоро будет ещё!"
+      description: "А пока что можно заглянуть на GitHub :)"
+
+  footer:
+    text: "♾️ aleqsanbr"
+
+en:
+  header:
+    name: "aleqsanbr [:]"
+    subtitle: "123"
+
+  support:
+    title: "Donations"
+    description: "If you want to support me, use the YooMoney button to transfer from a wallet or Russian card, and for cryptocurrency transfers you can copy the address or use the QR code :)"
+    yoomoney_button: "YooMoney"
+
+  crypto:
+    copy_button_title: "Copy"
+    qr_button_title: "Show QR"
+    copy_toast: "Address copied"
+
+  projects:
+    title: "Projects"
+    yandex_music_export:
+      name: "Yandex Music Export"
+      description: "Export Yandex Music playlists to a text file without authorization"
+    more_to_come:
+      name: "More to come!"
+      description: "And for now, you can visit my Github :)"
+
+  footer:
+    text: "♾️ aleqsanbr"
