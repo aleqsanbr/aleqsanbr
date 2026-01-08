@@ -2,7 +2,8 @@ const CONFIG = {
   socials: [
     { name: 'GitHub', url: 'https://github.com/aleqsanbr', icon: './icons/github.svg' },
     { name: 'Telegram', url: 'https://t.me/aleqsanbr', icon: './icons/telegram.svg' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/aleqsanbr', icon: './icons/linkedin.svg' }
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/aleqsanbr', icon: './icons/linkedin.svg' },
+    { name: 'Email', url: 'mailto:hi@aleqsanbr.dev', icon: './icons/email.svg' },
   ],
 
   yoomoney: {
