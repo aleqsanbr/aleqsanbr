@@ -24,6 +24,12 @@ const CONFIG = {
       url: 'https://yme.u-pov.ru'
     },
     {
+      nameKey: 'projects.userpov.name',
+      descriptionKey: 'projects.userpov.description',
+      image: './project_pics/userpov.png',
+      url: 'https://u-pov.ru'
+    },
+    {
       nameKey: 'projects.more_to_come.name',
       descriptionKey: 'projects.more_to_come.description',
       image: './project_pics/default.png',

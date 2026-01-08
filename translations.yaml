@@ -1,7 +1,7 @@
 ru:
   header:
     name: "aleqsanbr [:]"
-    subtitle: "123"
+    subtitle: "делаю какие-то штуки в свободное время!"
 
   support:
     title: "Донаты"
@@ -21,6 +21,9 @@ ru:
     more_to_come:
       name: "Скоро будет ещё!"
       description: "А пока что можно заглянуть на GitHub :)"
+    userpov:
+      name: "UserPOV"
+      description: "Лайт-медиа / мое хранилище заметок с полезной информацией"
 
   footer:
     text: "♾️ aleqsanbr"
@@ -28,7 +31,7 @@ ru:
 en:
   header:
     name: "aleqsanbr [:]"
-    subtitle: "123"
+    subtitle: "making stuff in my free tim"
 
   support:
     title: "Donations"
@@ -48,6 +51,9 @@ en:
     more_to_come:
       name: "More to come!"
       description: "And for now, you can visit my Github :)"
+    userpov:
+      name: "UserPOV"
+      description: "Lite media / my repository of notes with useful information"
 
   footer:
     text: "♾️ aleqsanbr"
