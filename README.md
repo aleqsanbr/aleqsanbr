@@ -1,3 +1,4 @@
 ### Hi there 👋
-My name is Alexander, and I am a 4th year student at [SFEDU](https://sfedu.ru) (IMMCS) ✨ <br>
+My name is Alex and I am making some cool stuff ✨ <br>
 - 💽 [LinkedIn](https://www.linkedin.com/in/aleqsanbr)
+- 💜 [aleqsanbr.dev](https://aleqsanbr.dev)
