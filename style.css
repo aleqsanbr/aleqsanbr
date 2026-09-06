@@ -5,19 +5,22 @@
 }
 
 :root {
-  --color-bg: #0a0a0a;
-  --color-bg-card: #151515;
-  --color-bg-card-hover: #4e4376;
-  --color-border: #222;
+  --color-bg: #09090f;
+  --color-bg-card: #14141d;
+  --color-bg-card-hover: #4c4278;
+  --color-border: #222230;
   --color-text-primary: #fff;
-  --color-text-secondary: #e0e0e0;
-  --color-text-muted: #888;
-  --color-text-ghost: #666;
-  --color-text-footer: #444;
-  --color-accent-start: #2b5876;
-  --color-accent-end: #4e4376;
-  --color-accent-hover: #625494;
-  --color-yoomoney: #00aea5;
+  --color-text-secondary: #d9d9e3;
+  --color-text-muted: #8b8b9a;
+  --color-text-ghost: #6d6d80;
+  --color-text-footer: #47475a;
+  --color-accent-start: #3d6fa8;
+  --color-accent-end: #6d4fa0;
+  --color-accent-hover: #8a68c4;
+  --color-accent-glow: rgba(109, 79, 160, 0.35);
+  --color-yoomoney: #00c2ae;
+  --color-yoomoney-end: #018f80;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -83,6 +86,21 @@ body {
 header {
   margin-bottom: var(--spacing-5xl);
   text-align: center;
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 320px;
+  background: radial-gradient(ellipse at center, var(--color-accent-glow) 0%, transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .header-top {
@@ -161,8 +179,10 @@ header {
 }
 
 h1 {
+  font-family: var(--font-mono);
   font-size: 48px;
   font-weight: 700;
+  letter-spacing: -0.02em;
   background: linear-gradient(to left, var(--color-accent-start), var(--color-accent-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -170,8 +190,9 @@ h1 {
 }
 
 .subtitle {
+  font-family: var(--font-mono);
   color: var(--color-text-ghost);
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: var(--spacing-md);
 }
 
@@ -253,6 +274,7 @@ h2 {
 
 .meme-wrapper img:hover {
   transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 0 32px var(--color-accent-glow);
 }
 
 .yoomoney-btn {
@@ -260,7 +282,7 @@ h2 {
   align-items: center;
   gap: var(--spacing-sm);
   padding: var(--spacing-sm) var(--spacing-xl);
-  background: var(--color-accent-end);
+  background: linear-gradient(135deg, var(--color-yoomoney), var(--color-yoomoney-end));
   border: none;
   border-radius: var(--radius-md);
   color: var(--color-text-primary);
@@ -291,7 +313,7 @@ h2 {
 
 .yoomoney-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(78, 67, 118, 0.4);
+  box-shadow: 0 4px 16px rgba(0, 194, 174, 0.35);
 }
 
 .yoomoney-btn span,
@@ -315,15 +337,37 @@ h2 {
 
 .crypto-card,
 .project-card {
+  position: relative;
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   transition: all 0.2s;
+  overflow: hidden;
+}
+
+.crypto-card::before,
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-accent-start), var(--color-accent-end));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
 }
 
 .crypto-card:hover,
 .project-card:hover {
   border-color: var(--color-bg-card-hover);
+  box-shadow: 0 8px 24px var(--color-accent-glow);
+}
+
+.crypto-card:hover::before,
+.project-card:hover::before {
+  transform: scaleX(1);
 }
 
 .crypto-card {
@@ -420,7 +464,6 @@ h2 {
 }
 
 .project-card {
-  overflow: hidden;
   text-decoration: none;
   color: inherit;
 }
@@ -430,11 +473,19 @@ h2 {
 }
 
 .project-image {
+  position: relative;
   width: 100%;
   height: 160px;
   background-size: cover;
   background-position: center;
   background-color: #221d33;
+}
+
+.project-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, var(--color-bg-card) 100%);
 }
 
 .project-content {
@@ -458,7 +509,17 @@ footer {
   color: var(--color-text-footer);
   font-size: 16px;
   padding-top: var(--spacing-3xl);
-  border-top: 1px solid var(--color-border);
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-border) 50%, transparent);
 }
 
 .toast {

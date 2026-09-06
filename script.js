@@ -21,8 +21,8 @@ const CONFIG = {
     {
       nameKey: 'projects.yandex_music_export.name',
       descriptionKey: 'projects.yandex_music_export.description',
-      image: 'https://u-pov.ru/wp-content/uploads/2023/07/UserPOV-1024x724.png',
-      url: 'https://yme.u-pov.ru'
+      image: './project_pics/yme.svg',
+      url: 'https://ymusicexport.ru'
     },
     {
       nameKey: 'projects.more_to_come.name',

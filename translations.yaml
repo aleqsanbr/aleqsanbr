@@ -5,7 +5,7 @@ ru:
 
   support:
     title: "Донаты"
-    description: "Если что-то из этого пригодилось — буду рад поддержке. Перевести можно через ЮMoney (с карты или кошелька), а для крипты — адрес или QR-код ниже."
+    description: "Если что-то пригодилось — буду рад поддержке. Перевести можно через ЮMoney (с карты или кошелька), а для крипты — адрес или QR-код ниже."
     yoomoney_button: "ЮMoney"
 
   crypto:
@@ -16,8 +16,8 @@ ru:
   projects:
     title: "Проекты"
     yandex_music_export:
-      name: "Yandex Music Export"
-      description: "Экспорт плейлистов Яндекс Музыки в текстовый файл без авторизации"
+      name: "YMusicExport"
+      description: "Инструменты для экспорта медиатеки Яндекс Музыки в текстовый файл"
     more_to_come:
       name: "Скоро будет ещё!"
       description: "А пока что можно заглянуть на GitHub :)"
@@ -43,8 +43,8 @@ en:
   projects:
     title: "Projects"
     yandex_music_export:
-      name: "Yandex Music Export"
-      description: "Export Yandex Music playlists to a text file without authorization"
+      name: "YMusicExport"
+      description: "Tools for exporting Yandex Music media library to a text file"
     more_to_come:
       name: "More to come!"
       description: "And for now, you can visit my Github :)"
