@@ -1,11 +1,11 @@
 ru:
   header:
     name: "aleqsanbr [:]"
-    subtitle: "делаю какие-то штуки в свободное время!"
+    subtitle: "пишу код и делаю разные штуки в свободное время"
 
   support:
     title: "Донаты"
-    description: "Если вы хотите поддержать меня чем-нибудь, то воспользуйтесь кнопкой ЮMoney для перевода с кошелька или российской карты, а для перевода криптовалюты можно скопировать адрес или использовать QR-код :)"
+    description: "Если что-то из этого пригодилось — буду рад поддержке. Перевести можно через ЮMoney (с карты или кошелька), а для крипты — адрес или QR-код ниже."
     yoomoney_button: "ЮMoney"
 
   crypto:
@@ -21,9 +21,6 @@ ru:
     more_to_come:
       name: "Скоро будет ещё!"
       description: "А пока что можно заглянуть на GitHub :)"
-    userpov:
-      name: "UserPOV"
-      description: "Лайт-медиа / мое хранилище заметок с полезной информацией"
 
   footer:
     text: "♾️ aleqsanbr"
@@ -31,11 +28,11 @@ ru:
 en:
   header:
     name: "aleqsanbr [:]"
-    subtitle: "making stuff in my free time"
+    subtitle: "writing code and making stuff in my free time"
 
   support:
     title: "Donations"
-    description: "If you want to support me, use the YooMoney button to transfer from a wallet or Russian card, and for cryptocurrency transfers you can copy the address or use the QR code :)"
+    description: "If any of this was useful to you, support is always welcome. You can send it via YooMoney (from a card or wallet), or use the address / QR code below for crypto."
     yoomoney_button: "YooMoney"
 
   crypto:
@@ -51,9 +48,6 @@ en:
     more_to_come:
       name: "More to come!"
       description: "And for now, you can visit my Github :)"
-    userpov:
-      name: "UserPOV"
-      description: "Lite media / my repository of notes with useful information"
 
   footer:
     text: "♾️ aleqsanbr"
